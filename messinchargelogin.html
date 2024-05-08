@@ -1,0 +1,139 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>
+Mess Incharge Login</title>
+<style>
+.heading{
+   color: white;
+   padding: 30px 50px;
+   margin: -10px;
+   background-color: black;
+}
+.endpage{
+ padding: 30px 80px;
+ margin: -10px;
+ color: white;
+ background-color: 990066;
+}
+div 
+{   
+  font-size: 50px; 
+}
+.formbody{
+  
+  margin: -75px auto;
+  height: -1px;
+  width: 300px;
+  background-color:none;
+}
+body {font-family: Arial, Helvetica, sans-serif;}
+form {border: none}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #808080;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #ff0000;
+}
+
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  padding: -1px -1px;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 5px 5px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+body {
+  background-image: url("https://images.unsplash.com/photo-1496150458551-140441714f2f?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max");
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+
+
+</style>
+</head>
+<body >
+<div class="heading"><font style="font-size:45px; font-family:Century Gothic"><center>Mess Incharge Login</center></font></div>
+<br><br><br><br><br>
+<div class="formbody">
+<form action="/action_page3.php" method="post"  >
+  <div class="imgcontainer">
+    <img src="https://w7.pngwing.com/pngs/980/886/png-transparent-male-portrait-avatar-computer-icons-icon-design-avatar-flat-face-icon-people-head-cartoon-thumbnail.png" alt="Avatar" class="avatar">
+  </div>
+
+  <div class="container">
+    <label for="uname"><font style="font-size:20px;color:white"><b>Username</b></font></label>
+    <input type="text" placeholder="Enter Username" name="uname" required>
+
+    <label for="psw"><font style="font-size:20px;color:white"><b>Password</b></font></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+        
+    <button type="submit">Login</button>
+    <label>
+      <input type="checkbox" checked="checked" name="remember"><font style="font-size:15px;color:white"> Remember me</font>
+    </label>
+  </div>
+
+  <div class="container" >
+    <button type="button" class="cancelbtn" onclick="goto()">Cancel</button>
+    <span class="psw"><a href="#"><font style="font-size:15px;color:white">Forgot password?</font></a></span>
+  </div>
+</form>
+</div>
+<script>
+function goto()
+{
+  window.location="homepage.html"
+}
+</script>
+
+
+</body>
+</html>

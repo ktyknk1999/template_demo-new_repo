@@ -1,0 +1,176 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<title>Student Details</title>
+<style>
+
+.heading{
+font-family: Century Gothic;
+   
+   margin: -10px; 
+  font-size: 20px;
+   padding: 12px 60px;
+   background-color: 1a53ff;
+   color: white;
+}
+img.avatar {
+text-align: right;
+  width: 3%;
+  border-radius: 50%;
+}
+body {
+  background-image: url("https://cdn.hipwallpaper.com/i/46/90/pJnN5O.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  
+}
+ul {
+  list-style-type: none;
+  margin: 10px -10px;
+  padding: 0;
+  overflow: hidden;
+  background-color: #1a53ff;
+  font-family: Century Gothic;
+  font-size:16px;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #002080;
+  color: white;
+}
+
+.active {
+  background-color: #ccd9ff;
+  color: black;
+}
+* {
+  box-sizing: border-box;
+}
+
+form.example input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
+}
+
+form.example button {
+  float: left;
+  width: 20%;
+  padding: 14px;
+  background: #2196F3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+}
+
+form.example button:hover {
+  background: #0b7dda;
+}
+
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.proceedbutton
+{
+  border-radius: 4px;
+  
+  
+  border: 0px solid black;
+  /*background-color: white;*/
+  color: black;
+  padding: 11px 25px;
+  font-size: 16px;
+  cursor: pointer;
+  background: none;
+  font-size: 20px;
+
+  
+
+}
+.look {
+  border: 2px solid #002699;
+  border-color: #002699;
+  color: #002699;
+}
+
+.look:hover {
+  background-color: #002699;
+  color: white;
+}
+.radiobut
+{
+  font-size: 25px;
+  color: black;
+  font-family: Century gothic;
+}
+
+
+
+
+</style>
+</head>
+<body>
+<div class=" heading"><img src="https://w0.pngwave.com/png/349/288/teacher-education-student-course-school-avatar-png-clip-art.png" alt="Avatar" class="avatar" > 
+
+Welcome, Abc
+<a href="wardenlogin.html" class="btn btn-info btn-lg" style="background-color:1a53ff;border:none;float:right;padding:3px 10px;">
+          <span class="glyphicon glyphicon-log-out"></span> Log out
+        </a>
+
+</div>
+
+<ul>
+  <li><a class="active" href="#">Students Detail</a></li>
+  <li><a href="wardenleaverequest.html">Leave Request</a></li>
+  <li><a href="wardenhosteldetail.html">Hostel Details</a></li>
+  <li><a href="wardenmessdetail.html">Mess Details</a></li>
+  <li><a href="wardennotice.html">Upload Any Notice</a></li>
+  <li><a href="wardenupdate.html">Update Details</a></li>
+</ul>
+<br>
+<form class="example" action="" style="margin:auto;max-width:300px">
+  <input type="text" placeholder="Search by Student Name" name="search2">
+  <button type="submit"><i class="fa fa-search"></i></button>
+</form>
+<br>
+<form action="" align=center>
+  <p><font style="font-size:40;color:#c06126;font-family:Century Gothic;text-shadow: 3px 3px 9px white;"><b>Please Select a Hostel:</b></font></p>
+  <input type="radio" id="hostel1" name="hostel" value="hostel1">
+  <label for="hostel1" class="radiobut">Hostel 1</label><br>
+  <input type="radio" id="hostel2" name="hostel" value="hostel2">
+  <label for="hostel2" class="radiobut">Hostel 2</label><br>
+  <input type="radio" id="hostel3" name="hostel" value="hostel3">
+  <label for="hostel3" class="radiobut">Hostel 3</label>
+  <br><br>
+
+
+  <b><input type="submit" class="proceedbutton look" value="proceed"></b>
+
+
+
+</form>
+
+</body>
+</html>

@@ -1,0 +1,145 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<title>
+Warden Portal
+</title>
+
+<style>
+.button {
+  border-radius: 4px;
+  background-color: 003380;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 30px;
+  width: 400px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.mainframe
+{
+  text-align: center;
+  margin: 40px;
+}
+.heading{
+font-family: Century Gothic;
+   
+   margin: -9px; 
+  font-size: 20px;
+   padding: 12px 80px;
+   background-color: 1a53ff;
+   color: white;
+}
+.imgcontainer {
+  text-align: right;
+  margin: 24px 0 12px 0;
+  padding: -1px -1px;
+}
+
+img.avatar {
+text-align: right;
+  width: 3%;
+  border-radius: 50%;
+}
+/*.insideframe
+{
+  padding: 10px 20px
+  margin: -15px 70px;
+}*/
+body {
+  background-image: url("https://cdn.hipwallpaper.com/i/46/90/pJnN5O.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+
+
+
+</style>
+</head>
+<body >
+<div class=" heading"><img src="https://w0.pngwave.com/png/349/288/teacher-education-student-course-school-avatar-png-clip-art.png" alt="Avatar" class="avatar" > 
+
+Welcome, Abc
+<a href="wardenlogin.html" class="btn btn-info btn-lg" style="background-color:1a53ff;border:none;float:right;padding:3px 10px;">
+          <span class="glyphicon glyphicon-log-out"></span> Log out
+        </a>
+
+</div>
+<div class="mainframe">
+<font style="font-size:40px;font-family:Helvetica;color:white"><b>Select what you want to choose</b><br><br></font>
+<button class="button" onclick="studentdetail()"><span>Students Detail</span></button>
+<button class="button" onclick="leaverqst()"><span>Leave Request</span></button><br>
+<button class="button" onclick="hosteldetail()"><span>Hostel Details</span></button>
+<button class="button" onclick="messdetail()"><span>Mess Details</span></button><br>
+<button class="button" onclick="notice()"><span>Upload Any Notice</span></button>
+<button class="button" onclick="update()"><span>Update Details</span></button><br>
+
+</div>
+<script>
+function studentdetail()
+{
+  window.location="wardenstudentsdetail.html"; 
+}
+function leaverqst()
+{
+  window.location="wardenleaverequest.html"; 
+}
+function hosteldetail()
+{
+  window.location="wardenhosteldetail.html"; 
+}
+function messdetail()
+{
+  window.location="wardenmessdetail.html"; 
+}
+function notice()
+{
+  window.location="wardennotice.html"; 
+}
+function update()
+{
+  window.location="wardenupdate.html"; 
+}
+
+
+
+
+</script>
+
+
+
+</body>
+</html>
+
+

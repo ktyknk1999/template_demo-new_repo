@@ -1,0 +1,149 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.fa {
+  padding: 0px;
+  font-size: 20px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: 990033;
+  color: white;
+}
+.fa-twitter {
+  background: 990033;
+  color: white;
+}
+
+.fa-google {
+  background:  990033;
+  color: white;
+}
+
+.fa-linkedin {
+  background:  990033;
+  color: white;
+}
+.fa-instagram {
+  background:  990033;
+  color: white;
+}
+.fa-snapchat-ghost {
+  background:  990033;
+  color: white;
+  /*text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;*/
+}
+.fa-yahoo {
+  background:  990033;
+  color: white;
+}
+
+.button {
+  background-color: 666666;
+  border: none;
+  color: white;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 6%
+}
+.heading{
+   
+   margin: -10px; 
+  font-size: 35px;
+   padding: 30px 50px;
+   /*background-color: 990033;*/
+   background-color: black;
+   color: white;
+}
+.endpage{
+ margin: -10px; 
+  font-size: 50px;
+  color: white;
+ padding: 30px 80px;
+ /*background-color: 990033;*/
+  background-color: none;
+}
+body {
+  background-image: url("https://images.unsplash.com/photo-1496150458551-140441714f2f?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max");
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+#mySidenav a {
+  position: relative;
+  left: -155px;
+  transition: 0.3s;
+  padding: 25px;
+  width: 50px;
+  text-decoration: none;
+  font-size: 24px;
+  color: black;
+  border-radius: 0 5px 5px 0;
+}
+
+#mySidenav a:hover {
+  left: -10;
+}
+
+#about {
+  top: 20px;
+  background-color: #f2f2f2;
+
+
+
+</style>
+<title>
+Home page
+</title>
+</head>
+<body >
+<div class="heading"><font style="font-size:35px; font-family:Century Gothic"><center>Welcome to Online Hostel Management System</center></font></div>
+<br><br><br>
+<div id="mySidenav" class="sidenav">
+  <a href="https://www.google.com/" id="about"><b>NOTICES</b></a>
+</div>
+
+<font style="font-size:30px; font-family:Microsoft JhengHei Light;color:white;"><center><b>Please choose your category:</b></center></font><br><br><br>
+<center><select id="list" name="list" style="min-height:35px;min-width:100px;" >
+               <option value = "#">select....</option>
+               <option value="wardenLogin.html"> Warden</option>
+               <option value="studentlogin.html"> Student</option>
+               <option value="messinchargelogin.html"> Mess Incharge</option>
+               </select></center><br><br>
+<center><button  class="button" onclick="gotosite()"> Proceed </button></center>
+
+<br><br><br><br>
+<div class="endpage"><font style="font-size:25px;font-family:times new roman"><b> About me:</b></font><br>
+<font style="font-size:18px;font-family:times new roman"><b>Developer:</b> Kartikeya Karnatak, </font>
+<font style="font-size:12px;font-family:times new roman"><b>contact details:</b><i> ktyknk1999@gmail.com</i> , 7800429265</font><br>
+<a href="https://www.facebook.com/profile.php?id=100007278105420" class="fa fa-facebook"></a>
+<a href="https://twitter.com/Kromkers99" class="fa fa-twitter"></a>
+<a href="#" class="fa fa-google"></a>
+<a href="https://www.linkedin.com/in/kartikeya-karnatak-b80381166" class="fa fa-linkedin"></a>
+<a href="https://www.instagram.com/krom___99/" class="fa fa-instagram"></a>
+<a href="https://www.snapchat.com/add/kromkers99" class="fa fa-snapchat-ghost"></a>
+<a href="#" class="fa fa-yahoo"></a>
+</div>
+<script>
+function gotosite()
+{
+  window.location=document.getElementById("list").value; 
+}
+</script>
+</body>
+</html>

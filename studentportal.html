@@ -1,0 +1,160 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Oswald:wght@700&display=swap" rel="stylesheet">
+<title>
+Warden Portal
+</title>
+
+<style>
+.button {
+  background-opacity: 0%;
+  border-radius: 4px;
+  background-color: transparent;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 35px;
+  padding: 20px;
+  width: 510px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+  color: #994d00;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.subframe
+{
+  
+  text-align:center;
+  
+  margin: 20px;
+  font-family: 'Montserrat', sans-serif;
+  text-shadow: 3px 3px 7px white;
+}
+.mainframe
+{
+  text-align:left;
+  
+  margin: 10px;
+  font-size: 37px;
+  font-family: 'Oswald', sans-serif;
+  
+}
+.heading{
+font-family: Century Gothic;
+   
+   margin: -10px; 
+  font-size: 20px;
+   padding: 12px 60px;
+   background-color:#b30000;
+   color: white;
+}
+.imgcontainer {
+  text-align: right;
+  margin: 24px 0 12px 0;
+  padding: -1px -1px;
+}
+
+img.avatar {
+text-align: right;
+  width: 3%;
+  border-radius: 50%;
+}
+/*.insideframe
+{
+  padding: 10px 20px
+  margin: -15px 70px;
+}*/
+body {
+  background-image: url("https://www.dtelepathy.com/blog/wp-content/uploads/2014/06/Betterment_EducationSites.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+
+
+
+</style>
+</head>
+<body >
+<div class=" heading"><img src="https://p7.hiclipart.com/preview/312/283/679/avatar-computer-icons-user-profile-business-user-avatar.jpg" alt="Avatar" class="avatar" >
+
+Welcome, Abc
+<a href="studentlogin.html" class="btn btn-info btn-lg" style="background-color:#b30000;border:none;float:right;padding:3px 10px;">
+          <span class="glyphicon glyphicon-log-out"></span> Log out
+        </a>
+
+</div>
+<div class="subframe">
+<font style="font-size:55px;color:#b04600"><b>SELECT WHAT YOU WANT TO CHOOSE</b><br></font></div>
+<div class="mainframe">
+<button class="button" onclick=""><span><b><b>REQUEST FOR LONG LEAVE</span></button><br>
+<button class="button" onclick=""><span>REQUEST FOR SHORT LEAVE</span></button><br>
+<button class="button" onclick=""><span>DROP A COMPLAINT</span></b></button><br>
+<button class="button" onclick=""><span>YOUR PROFILE</span></b></button><br>
+
+
+</div>
+<script>
+function studentdetail()
+{
+  window.location="wardenstudentsdetail.html"; 
+}
+function leaverqst()
+{
+  window.location="wardenleaverequest.html"; 
+}
+function hosteldetail()
+{
+  window.location="wardenhosteldetail.html"; 
+}
+function messdetail()
+{
+  window.location="wardenmessdetail.html"; 
+}
+function notice()
+{
+  window.location="wardennotice.html"; 
+}
+function update()
+{
+  window.location="wardenupdate.html"; 
+}
+
+
+
+
+</script>
+
+
+
+</body>
+</html>
+
+
